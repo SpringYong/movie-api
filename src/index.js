@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
+  // react application은 한 번에 하나의 component만 redering 할 수 있다.
+  // 따라서 모든 것은 application(App.js) 안에 들어가야 한다.
+  // application(App.js) 안에서 많은 component를 넣을 수 있다.
+  // 이러한 component 안에 더 많은 component를 import 할 수 있다.
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
