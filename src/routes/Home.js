@@ -19,20 +19,27 @@ class Home extends React.Component {
     );
     this.setState({ movies, isLoading: false });
   };
+
   componentDidMount() {
     this.getMovies();
   }
+
   render() {
     const { isLoading, movies } = this.state; // 더 깔끔한 코드 만들어줌
     return (
       <section className="container">
+        {console.log(movies)}
+        <div className="bg"></div>
         {isLoading ? (
           <div className="loader">
-            <span className="loader_text">"Loading..."</span>
+            <span className="loader_text">Loading</span>
           </div>
         ) : (
           <div className="movies">
             {movies.map((movie) => {
+              {
+                console.log(movies);
+              }
               return (
                 <Movie
                   key={movie.id}
@@ -42,6 +49,7 @@ class Home extends React.Component {
                   summary={movie.summary}
                   poster={movie.medium_cover_image}
                   genres={movie.genres}
+                  rating={movie.rating}
                 />
               );
             })}

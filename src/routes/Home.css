@@ -2,6 +2,7 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  background-image: url("https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2F736x%2F52%2Ffe%2F0b%2F52fe0b89a54abbbab8da4ff388bca4c8--antik-bricks.jpg&type=sc960_832");
 }
 
 .loader {
@@ -10,7 +11,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 40px;
+  color: white;
 }
 
 .movies {
