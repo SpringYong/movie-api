@@ -41,5 +41,5 @@
   "devDependencies": {
     "gh-pages": "^3.2.3"
   },
-  "https://springyong.github.io/movie-api/"
+  "homepage": "https://springyong.github.io/movie-api/"
 }
